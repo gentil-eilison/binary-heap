@@ -84,7 +84,7 @@ class BinaryHeap:
         idx = len(self.__list) // 2
         while idx > 1:
             idx -= 1
-            self.go_down(idx, len(self.__list))
+            self.go_down(idx, len(self.__list) - 1)
         
     def heap_sort(self) -> list[int]:
         self.arrange()

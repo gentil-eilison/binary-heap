@@ -26,6 +26,7 @@ class BinaryHeapOperationTests:
         for priority_data in new_priorities:
             idx, priority = priority_data[0], priority_data[1]
             self.__binary_heap.change_priority(idx, priority)
+            print("Prioridade alterada!")
             self.__binary_heap.display_heap()
     
     def remove_items(self, count: int) -> None:
